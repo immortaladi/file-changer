@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>File Converter Application</h1>
+        <form id="file-form" enctype="multipart/form-data">
+            <label for="file-input">Choose file:</label>
+            <input type="file" id="file-input" name="file" required>
+            
+            <label for="format-select">Convert to:</label>
+            <select id="format-select" name="format">
+                <option value="pdf">PDF</option>
+                <option value="jpg">JPG</option>
+                <option value="png">PNG</option>
+                <option value="zip">ZIP</option>
+                <!-- Add more format options here -->
+            </select>
+            
+            <button type="submit">Convert File</button>
+        </form>
+        
+        <div id="result">
+            <!-- The download link will appear here after conversion -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
